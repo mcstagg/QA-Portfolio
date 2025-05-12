@@ -31,8 +31,6 @@ The first click does nothing; the login only works on the second click.
 ### 📊 Severity:
 Medium to High — Functional, affects UX, might be mistaken for a broken form.
 
-Include:
-
 ### Bug Report - Login App:
 - [Google Sheets Bug Report - Login App](https://docs.google.com/spreadsheets/d/1kDRKsdBSCk5k941mgSmHAhQNc0gbiJTGhReE8OBuZlI/edit?gid=978824207#gid=978824207)
 
@@ -115,9 +113,6 @@ export default function LoginApp() {
   );
 }
 ```
-
-Bug report in Jira-style format:
-
 ```pgsql
 **Summary:** Login button does not respond on first click
 

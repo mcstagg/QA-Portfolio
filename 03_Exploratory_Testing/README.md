@@ -1,13 +1,12 @@
 # 03 Exploratory Testing
 
-Describe your testing process and include any relevant files here.
+This folder documents a 30-minute exploratory test session focused on the login form of a sample React app. I discovered a reproducible bug (login works only on 2nd click), UX feedback issues, and an input sanitization concern. Artifacts include my session charter, notes, and bug summaries.
 
-Exploratory Testing
-Project: Use a public site (e.g., todomvc.com)
-Artifacts:
+Module Contents:
 
-Exploratory session notes
-
-Heuristic or test charter
-
-Any issues or insights discovered
+| File                              | Purpose                                 |
+| --------------------------------- | --------------------------------------- |
+| `exploratory-charter.md`          | Your test mission and scope             |
+| `test-notes.md`                   | Notes taken during the session          |
+| `issues-found.xlsx`               | Bugs, odd behaviors, usability concerns |
+| `screenshots/`                    | Any visual evidence of issues           |
