@@ -1,47 +1,42 @@
 # 02 Bug Reporting
 
-## 🐞 Bug Name: Login Button Unresponsive on First Click
+**Summary:** Login button does not respond on first click
 
-### ✅ Description:
-When a user enters valid credentials and clicks the Login button, nothing happens on the first click. The second click processes the login as expected.
+**Steps to Reproduce:**
+1. Go to login page
+2. Enter username: student
+3. Enter password: Student123
+4. Click Login
+5. Nothing happens
+6. Click Login again
+7. Login is successful
 
-### 🔍 Root Cause:
-The onClick handler isn't properly bound on initial render.
+**Expected Result:** User should be logged in on first click.
 
-### 🧪 Steps to Reproduce:
+**Actual Result:** Login works only after the second click.
 
-1. Navigate to the login page.
+**System Info:**
+- OS: macOS Ventura 13.5
+- Browser: Chrome 122.0
+- Environment: Localhost
+- App Version: v1.0
 
-2. Enter a valid email and password.
+**Severity:** Medium  
+**Priority:** High
 
-3. Click the Login button once.
-
-4. Observe that nothing happens.
-
-5. Click the Login button again.
-
-6. The login works and redirects the user.
-
-### ✅ Expected Result:
-The user should be logged in and redirected after the first click.
-
-### ❌ Actual Result:
-The first click does nothing; the login only works on the second click.
-
-### 📊 Severity:
-Medium to High — Functional, affects UX, might be mistaken for a broken form.
+**Attachments:** 
 
 ### Bug Report - Login App:
 - [Google Sheets Bug Report - Login App](https://docs.google.com/spreadsheets/d/1kDRKsdBSCk5k941mgSmHAhQNc0gbiJTGhReE8OBuZlI/edit?gid=978824207#gid=978824207)
 
-<img src="BugReport-LoginApp.png" alt="Bug Report" width="400"/>
+<img src="./screenshots/BugReport-LoginApp.png" alt="Bug Report" width="400"/>
 
 ### Bug: 
 When a user enters valid credentials and clicks the Login button, nothing happens on the first click. The second click processes the login as expected. 
 
-<img src="ValidLogin.png" alt="Login Button Bug" width="300"/>
+<img src="./screenshots/ValidLogin.png" alt="Login Button Bug" width="300"/>
 
-<img src="SuccessfulLogin.png" alt="Successful Login" width="300"/>
+<img src="./screenshots/SuccessfulLogin.png" alt="Successful Login" width="300"/>
 
 A link to the buggy code:
 
@@ -112,31 +107,4 @@ export default function LoginApp() {
     </div>
   );
 }
-```
-```pgsql
-**Summary:** Login button does not respond on first click
-
-**Steps to Reproduce:**
-1. Go to login page
-2. Enter username: student
-3. Enter password: Student123
-4. Click Login
-5. Nothing happens
-6. Click Login again
-7. Login is successful
-
-**Expected Result:** User should be logged in on first click.
-
-**Actual Result:** Login works only after the second click.
-
-**System Info:**
-- OS: macOS Ventura 13.5
-- Browser: Chrome 122.0
-- Environment: Localhost
-- App Version: v1.0
-
-**Severity:** Medium  
-**Priority:** High
-
-**Attachments:** ![login-bug.gif](login-bug.gif)
 ```

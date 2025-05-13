@@ -6,7 +6,7 @@ Module Contents:
 
 | File                              | Purpose                                 |
 | --------------------------------- | --------------------------------------- |
-| `exploratory-charter.md`          | Your test mission and scope             |
-| `test-notes.md`                   | Notes taken during the session          |
-| `issues-found.xlsx`               | Bugs, odd behaviors, usability concerns |
+| [`exploratory-charter.md`](exploratory-charter.md)          | Test mission and scope             |
+| [`test-notes.md`](test-notes.md)                   | Notes taken during the session          |
+| [`issues-found.md`](issues-found.md)               | Bugs, odd behaviors, usability concerns |
 | `screenshots/`                    | Any visual evidence of issues           |
