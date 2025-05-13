@@ -17,4 +17,4 @@ App version: QA-Demo-App v1.0
 - Screen capture
 - Notepad for test notes
 
-[ReadMe.md](readme.md)
+[ReadMe.md](ReadMe.md)
