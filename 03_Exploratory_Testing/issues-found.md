@@ -9,4 +9,4 @@
 
 <img src="./screenshots/SuccessfulLogin.png" alt="Successful Login" width="400"/>
 
-[ReadMe.md](ReadMe.md)
+[README.md](README.md)

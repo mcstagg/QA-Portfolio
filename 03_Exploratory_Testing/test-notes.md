@@ -10,4 +10,4 @@
 - 15:00: Attempted input with script tag `<script>` — no sanitization message.
 - 25:00: Tried keyboard-only nav — works well.
 
-[ReadMe.md](ReadMe.md)
+[README.md](README.md)
