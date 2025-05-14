@@ -1,9 +1,23 @@
 # Extras
 
-Describe your testing process and include any relevant files here.
+### Tools & Technologies: 
+- Postman
+- Jira
+- Zephyr
+- Lighthouse
+- Chrome Dev Tools
+- Screen Capture
+- Git
+- Github
 
-Extras:
+### Languages:
+- HTML
+- CSS 
+- JavaScript
 
-Tools you've used (Jira, Postman, etc.)
-
-Links to sample test plans, scripts, or screenshots
+### Skills: 
+- Manual Testing
+- Bug Reporting 
+- Exploratory Testing 
+- API Testing
+- Regression testing
