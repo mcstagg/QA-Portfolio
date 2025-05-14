@@ -1,13 +1,25 @@
 # 05 Regression Testing
 
-Describe your testing process and include any relevant files here.
+This module documents a regression testing session conducted after a code update to a login component. The goal was to verify that new changes did not break existing functionality.
 
-Regression Testing
-Project: Modify your login form slightly (e.g., add a delay or animation)
-Artifacts:
+## 🔁 What Was Tested
+- Login flow
+- Error messaging
+- Dashboard redirect
+- Token generation
 
-Regression checklist
+## 🔍 Approach
+- Compared behavior before and after changes
+- Verified existing test cases still passed
+- Logged any regressions and their fixes
 
-Before/after test results
+Artifacts include a test plan, test case spreadsheet, screenshots, and result summary.
 
-Notes on what was re-tested
+### 05_Regression_Testing/
+| File                              | Purpose                                 |
+| --------------------------------- | --------------------------------------- |
+| [regression-test-plan.md](regression-test-plan.md) | Test plan outline      |
+| [before-after-results.md](before-after-results.md )| Table + analysis summary |
+| regression-test-cases.xlsx        | Spreadsheet with before/after           |
+| screenshots/                      | Screenshots of Regression Testing       |
+| README.md                         | Overview of Regression Testing module   |
