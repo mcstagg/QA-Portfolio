@@ -27,7 +27,7 @@
 **Attachments:** 
 
 ### Bug Report - Login App:
-- [Google Sheets Bug Report - Login App](https://docs.google.com/spreadsheets/d/1kDRKsdBSCk5k941mgSmHAhQNc0gbiJTGhReE8OBuZlI/edit?gid=978824207#gid=978824207)
+- [Google Sheets Bug Report - Login App](https://docs.google.com/spreadsheets/d/1kDRKsdBSCk5k941mgSmHAhQNc0gbiJTGhReE8OBuZlI/edit?usp=sharing)
 
 <img src="./screenshots/BugReport-LoginApp.png" alt="Bug Report" width="400"/>
 

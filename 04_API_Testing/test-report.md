@@ -35,7 +35,7 @@ All test case details are documented in the accompanying api-test-cases.xlsx fil
 
 ### Screenshots:
 
-[API-Test-Cases Google Sheets](https://docs.google.com/spreadsheets/d/1DvsMG4NYRzxCh-bKf4uiy4GtvT83aG2ED6fZ2FM62Tk/edit?gid=395501021#gid=395501021)  
+[API-Test-Cases Google Sheets](https://docs.google.com/spreadsheets/d/1DvsMG4NYRzxCh-bKf4uiy4GtvT83aG2ED6fZ2FM62Tk/edit?usp=sharing)  
 
 <img src="./screenshots/api-test-cases-spreadsheet.png" alt="Successful Login" width="400"/>
 
