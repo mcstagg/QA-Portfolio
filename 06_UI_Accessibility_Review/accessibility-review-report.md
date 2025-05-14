@@ -22,7 +22,7 @@
 - Add ARIA landmarks for easier screen reader navigation
 
 ## Spreadsheet
-[acessibility-issues Google Sheets](https://docs.google.com/spreadsheets/d/1JlPV-jpF9DRYjVzbJe_aHCQuIUplBs_rmFm1lVDF3q8/edit?usp=sharing)
+[acessibility-issues Google Sheets](https://docs.google.com/spreadsheets/d/1JlPV-jpF9DRYjVzbJe_aHCQuIUplBs_rmFm1lVDF3q8/edit?usp=sharing)  
 <img src="./screenshots/accessibility-issues-sheet.png" alt="Accessibility Issues Sheet" width="700" />
 
 ## 📸 Screenshot
