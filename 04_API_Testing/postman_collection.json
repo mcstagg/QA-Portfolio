@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "20a48500-72d6-4080-afa9-35fd2384046e",
+		"name": "Login API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44931152",
+		"_collection_link": "https://mike-1102189.postman.co/workspace/Login-App~731c4a67-4ae8-4306-9f7f-66da64bd0135/collection/44931152-20a48500-72d6-4080-afa9-35fd2384046e?action=share&source=collection_link&creator=44931152"
+	},
+	"item": [
+		{
+			"name": "User Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-length": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-mock-response-code",
+						"value": "415",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "username=student&password=Student123",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cd07db3f-9e5b-4999-84af-d993d7df9dd5.mock.pstmn.io/api/lgoin",
+					"protocol": "https",
+					"host": [
+						"cd07db3f-9e5b-4999-84af-d993d7df9dd5",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"api",
+						"lgoin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login Success 200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"student\",\n  \"password\": \"Student123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cd07db3f-9e5b-4999-84af-d993d7df9dd5.mock.pstmn.io/api/lgoin",
+							"protocol": "https",
+							"host": [
+								"cd07db3f-9e5b-4999-84af-d993d7df9dd5",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"lgoin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"token\": \"abcdef123456\",\n  \"userId\": 1001\n}"
+				},
+				{
+					"name": "Unauthorized 401",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"student\",\n  \"password\": \"wrong\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cd07db3f-9e5b-4999-84af-d993d7df9dd5.mock.pstmn.io/api/lgoin",
+							"protocol": "https",
+							"host": [
+								"cd07db3f-9e5b-4999-84af-d993d7df9dd5",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"lgoin"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"error\": \"Bad Request\",\n  \"message\": \"invalid data\"\n}"
+				},
+				{
+					"name": "Bad Request 400 (only password)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"password\": \"Student123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cd07db3f-9e5b-4999-84af-d993d7df9dd5.mock.pstmn.io/api/lgoin",
+							"protocol": "https",
+							"host": [
+								"cd07db3f-9e5b-4999-84af-d993d7df9dd5",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"lgoin"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"error\": \"Bad Request\",\n  \"message\": \"Unsupported Media Type\"\n}"
+				},
+				{
+					"name": "Bad Request 400 (only username)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-mock-response-code",
+								"value": "400",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"student\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cd07db3f-9e5b-4999-84af-d993d7df9dd5.mock.pstmn.io/api/lgoin",
+							"protocol": "https",
+							"host": [
+								"cd07db3f-9e5b-4999-84af-d993d7df9dd5",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"lgoin"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"error\": \"Bad Request\",\n  \"message\": \"Unsupported Media Type\"\n}"
+				},
+				{
+					"name": "Unsupported Media Type 415",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-mock-response-code",
+								"value": "415",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "username=student&password=Student123",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cd07db3f-9e5b-4999-84af-d993d7df9dd5.mock.pstmn.io/api/lgoin",
+							"protocol": "https",
+							"host": [
+								"cd07db3f-9e5b-4999-84af-d993d7df9dd5",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"lgoin"
+							]
+						}
+					},
+					"status": "Unsupported Media Type",
+					"code": 415,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"error\": \"Unsupported Media Type\",\n  \"message\": \"Unsupported Media Type\"\n}"
+				}
+			]
+		}
+	]
+}
