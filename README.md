@@ -20,3 +20,5 @@ Each folder contains examples of different types of software testing I've practi
 5. Regression Testing
 
 6. UI/UX Testing or Mobile Testing
+
+7. Automation Testing
